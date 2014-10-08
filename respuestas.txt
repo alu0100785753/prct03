@@ -1,5 +1,32 @@
 18-
+2.0.0-p247 :001 > puts "Hello world"
 Hello World
  => nil 
+2.0.0-p247 :002 >
+
+21-
+La diferencia es que al hacerlo con el irb entra en el interprete y ejecuta el programa, pudiendo ver los pasos que hace, mientras que con el interprete de ruby solo interpreta el programa.
+
+26-
+[1] pry(main)> puts x
+10
+=> nil
+[2] pry(main)> def hello
+[2] pry(main)*   puts "Hello World"
+[2] pry(main)* end  
+=> nil
+[3] pry(main)> hello
+Hello World
+=> nil
+[4] pry(main)> byebye
+bye bye world!!!
+=> nil
+[5] pry(main)> x = "changed"
+=> "changed"
+[6] pry(main)> exit
+program resumes here. Value of x is: changed.
+
+27-
+La diferencia es que al ejecutar el archivo con irb abre la terminal de irb y ejecuta el codigo, mientras que con pry al no tener las linea "require 'pry'" y "binding.pry" no abre la consola de pry y se ejecuta el programa normal como cuando lo haciamos con ruby.
 
 
